@@ -1,29 +1,8 @@
-body {
-    padding: 30px;
-}
-
-#jumbotron {
-color: white;
-text-align: center;
-margin: 30px;
-}
-
-#schedule-header {
+.jumbotron {
     color: white;
-    text-align: left;
-    font-weight: bold;
 }
 
-#add-train {
-    background-color: orange;
+#section-header {
     color: white;
-    text-align: left;
-    font-weight: bold;
-    margin: 30, 0, 30, 0;
     padding: 15px;
-    stroke: orange;
-}
-
-.form-group {
-    margin-top: 30px;
 }
