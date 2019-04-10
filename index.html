@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <!-- CSS  -->
+    <link rel="stylesheet" href="style.css">
+    <title>ChooChooChooseMe</title>
+</head>
+<body>
+    <!--Jumbotron with name of site-->
+    <div class="jumbotron jumbotron-fluid  bg-warning">
+        <div class="container" id="jumbotron">
+          <h1 class="display-4">Monorail!</h1>
+          <p class="lead">Welcome to Springfield's premier monorail schedule! It's better than Shelbyville's!</p>
+        </div>
+      </div>
+
+      <!--Current Train Schedule Div-->
+      <table class="table">
+        <thead>
+          <tr class="header  bg-info" id="schedule-header">
+            <th scope="col">Train Name</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Frequency</th>
+            <th scope="col">Next Arrival</th>
+            <th scope="col">Minutes Away</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+        
+      <!--Add Train Form  Div-->
+      
+      <div>
+        
+          <form>
+              <div id="add-train">Add Train</div>
+            <div class="form-group">
+              <label for="InputTrainName">Train Name</label>
+              <input type="text" class="form-control" id="InputTrainName">
+            </div>
+            <div class="form-group">
+              <label for="InputDestination">Destination</label>
+              <input type="text" class="form-control" id="InputDestination">
+            </div>
+            <div class="form-group">
+                <label for="InputFirstTrainTime">First Train Time (HH:mm - military time)</label>
+                <input type="text" class="form-control" id="InputFirstTrainTime">
+              </div>
+              <div class="form-group">
+                <label for="inputFrequency">Frequency (min)</label>
+                <input type="text" class="form-control" id="inputFrequency">
+              </div>
+              <button type="submit" class="btn btn-primary bg-info">Submit</button>
+
+            </div>
+
+     <!-- JQuery link -->
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+ 
+     <!-- JS link -->
+     <script src="app.js"></script>
+</body>
+</html>
